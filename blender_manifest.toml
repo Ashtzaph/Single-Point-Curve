@@ -1,34 +1,25 @@
-# Required core metadata
 schema_version = "1.0.0"
 id = "single_point_curve"
-type = "addon"
+type = "add-on"  # Corrected type value
 
-# Blender extension metadata
 [blender]
 name = "Single Point Curve"
-tagline = "Adds a single control point with collapsed handles"
-description = """
-Creates a minimal curve object with a single control point and collapsed handles.
-Perfect as a starting point for building custom curves.
-"""
 version = "1.0.0"
 blender_version_min = "4.4.0"
-# blender_version_max = "4.5.0"  # Optional maximum version
-
+tagline = "Adds a single control point with collapsed handles"
+description = "Creates a minimal curve object with a single control point and collapsed handles, perfect as a starting point for building custom curves."
 author = "Your Name"
 maintainer = "Your Name <your.email@example.com>"
-license = ["SPDX:GPL-3.0-or-later"]  # Required for add-ons
+license = ["SPDX:GPL-3.0-or-later"]  # Required GPL license for add-ons
+category = "Add Curve"
+
 doc_url = "https://github.com/Ashtzaph/Single-Point-Curve"
 tracker_url = "https://github.com/Ashtzaph/Single-Point-Curve/issues"
 support_url = "https://github.com/Ashtzaph/Single-Point-Curve/discussions"
-category = "Add Curve"
 
-# Platform requirements
 [platform]
-# Minimum Python version (Blender 4.4 uses 3.10)
-python = ">=3.10"
+python = ">=3.10"  # Blender 4.4 uses Python 3.10
 
-# Files to include
 [files]
 include = [
     "*.py",
@@ -40,9 +31,3 @@ exclude = [
     "__pycache__/*",
     "*.blend*"
 ]
-
-# Optional: If you have any Python dependencies
-#[requirements]
-#packages = [
-#    {name = "numpy", version = ">=1.23.5"}
-#]
