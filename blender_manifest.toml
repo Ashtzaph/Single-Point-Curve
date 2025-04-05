@@ -1,10 +1,23 @@
-# Required metadata
+# Required core metadata
+schema_version = "1.0.0"
+id = "single_point_curve"
+type = "addon"
+
+# Blender extension metadata
 [blender]
 name = "Single Point Curve"
-author = "Amir Diab (or Ashtzaph)"
+tagline = "Adds a single control point with collapsed handles"
+description = """
+Creates a minimal curve object with a single control point and collapsed handles.
+Perfect as a starting point for building custom curves.
+"""
 version = "1.0.0"
-description = "Adds a single control point with collapsed handles"
-warning = ""  # Optional warning message
+blender_version_min = "4.4.0"
+# blender_version_max = "4.5.0"  # Optional maximum version
+
+author = "Your Name"
+maintainer = "Your Name <your.email@example.com>"
+license = ["SPDX:GPL-3.0-or-later"]  # Required for add-ons
 doc_url = "https://github.com/Ashtzaph/Single-Point-Curve"
 tracker_url = "https://github.com/Ashtzaph/Single-Point-Curve/issues"
 support_url = "https://github.com/Ashtzaph/Single-Point-Curve/discussions"
@@ -12,38 +25,24 @@ category = "Add Curve"
 
 # Platform requirements
 [platform]
-# Minimum Blender version (4.4.0)
-blender_version_min = "4.4.0"
-# Optionally specify maximum compatible version
-# blender_version_max = "4.5.0"
+# Minimum Python version (Blender 4.4 uses 3.10)
+python = ">=3.10"
 
-# Python requirements (if any)
-[requirements]
-python = ">=3.10"  # Blender 4.4 uses Python 3.10
-# You can list pip packages here if needed
-# packages = [
-#   "numpy",
-# ]
-
-# Files to include in the package
+# Files to include
 [files]
-# Include all Python files in the package
 include = [
     "*.py",
     "README.md",
     "LICENSE"
 ]
 
-# Exclude patterns (optional)
 exclude = [
-    "__pycache__",
-    "*.blend",
-    "*.zip"
+    "__pycache__/*",
+    "*.blend*"
 ]
 
-# Optional license information
-[license]
-# Either SPDX identifier or path to license file
-type = "MIT"
-# If using a custom license file:
-file = "LICENSE"
+# Optional: If you have any Python dependencies
+#[requirements]
+#packages = [
+#    {name = "numpy", version = ">=1.23.5"}
+#]
