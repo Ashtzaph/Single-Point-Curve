@@ -1,6 +1,6 @@
 schema_version = "1.0.0"
 id = "single_point_curve"
-type = "add-on"  # Corrected type value
+type = "add-on"
 
 [blender]
 name = "Single Point Curve"
@@ -8,9 +8,9 @@ version = "1.0.0"
 blender_version_min = "4.4.0"
 tagline = "Adds a single control point with collapsed handles"
 description = "Creates a minimal curve object with a single control point and collapsed handles, perfect as a starting point for building custom curves."
-author = "Your Name"
-maintainer = "Your Name <your.email@example.com>"
-license = ["SPDX:GPL-3.0-or-later"]  # Required GPL license for add-ons
+author = "Amir Diab"
+maintainer = "Amir Diab <mct77077787@gmail.com>"
+license = ["SPDX:GPL-3.0-or-later"]
 category = "Add Curve"
 
 doc_url = "https://github.com/Ashtzaph/Single-Point-Curve"
@@ -18,7 +18,7 @@ tracker_url = "https://github.com/Ashtzaph/Single-Point-Curve/issues"
 support_url = "https://github.com/Ashtzaph/Single-Point-Curve/discussions"
 
 [platform]
-python = ">=3.10"  # Blender 4.4 uses Python 3.10
+python = ">=3.10"
 
 [files]
 include = [
