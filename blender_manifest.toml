@@ -1,5 +1,5 @@
 schema_version = "1.0.0"
-id = "single_point_curve"
+id = "Single-Point-Curve"
 type = "add-on"
 
 [blender]
