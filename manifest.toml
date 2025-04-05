@@ -1,0 +1,49 @@
+# Required metadata
+[blender]
+name = "Single Point Curve"
+author = "Amir Diab (or Ashtzaph)"
+version = "1.0.0"
+description = "Adds a single control point with collapsed handles"
+warning = ""  # Optional warning message
+doc_url = "https://github.com/Ashtzaph/Single-Point-Curve"
+tracker_url = "https://github.com/Ashtzaph/Single-Point-Curve/issues"
+support_url = "https://github.com/Ashtzaph/Single-Point-Curve/discussions"
+category = "Add Curve"
+
+# Platform requirements
+[platform]
+# Minimum Blender version (4.4.0)
+blender_version_min = "4.4.0"
+# Optionally specify maximum compatible version
+# blender_version_max = "4.5.0"
+
+# Python requirements (if any)
+[requirements]
+python = ">=3.10"  # Blender 4.4 uses Python 3.10
+# You can list pip packages here if needed
+# packages = [
+#   "numpy",
+# ]
+
+# Files to include in the package
+[files]
+# Include all Python files in the package
+include = [
+    "*.py",
+    "README.md",
+    "LICENSE"
+]
+
+# Exclude patterns (optional)
+exclude = [
+    "__pycache__",
+    "*.blend",
+    "*.zip"
+]
+
+# Optional license information
+[license]
+# Either SPDX identifier or path to license file
+type = "MIT"
+# If using a custom license file:
+file = "LICENSE"
