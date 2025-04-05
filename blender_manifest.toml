@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 # Required core metadata
-id = "Single-Point-Curve"
+id = "single_point_curve"
 version = "1.0.0"
 name = "Single Point Curve"
 tagline = "Adds a single control point with collapsed handles"
